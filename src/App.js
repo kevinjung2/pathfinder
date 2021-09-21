@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import OptionsBar from './containers/OptionsBar'
+import Grid from './containers/Grid'
 
 function App() {
   const [gridSize, changeGridSize] = useState(100)
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <OptionsBar changeGridSize={changeGridSize} changeAlgorithm={changeAlgorithm} toggleWall={toggleWall} />
+      <Grid gridSize={gridSize} />
     </div>
   );
 }
