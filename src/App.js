@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 
+import OptionsBar from './containers/OptionsBar'
+
 function App() {
   const [gridSize, changeGridSize] = useState(100)
   const [algorithm, changeAlgorithm] = useState("dykstras")
@@ -8,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-
+      <OptionsBar changeGridSize={changeGridSize} changeAlgorithm={changeAlgorithm} toggleWall={toggleWall} />
     </div>
   );
 }
