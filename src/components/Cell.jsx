@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../stylesheets/Cell.css'
+
 export default function Cell(props) {
   return(
     <>

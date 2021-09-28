@@ -1,0 +1,11 @@
+.light {
+  background: white;
+  width: 10vh;
+  height: 10vh;
+}
+
+.dark {
+  background: black;
+  width: 10vh;
+  height: 10vh;
+}

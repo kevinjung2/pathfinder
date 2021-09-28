@@ -1,4 +1,4 @@
-import './App.css';
+import './stylesheets/App.css';
 import { useState } from 'react';
 
 import OptionsBar from './containers/OptionsBar'
