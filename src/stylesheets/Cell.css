@@ -1,11 +1,13 @@
-.light {
-  background: white;
-  width: 10vh;
-  height: 10vh;
+.grid {
+  margin: auto;
+  width: 33em;
 }
 
-.dark {
-  background: black;
-  width: 10vh;
-  height: 10vh;
+.cell {
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  border: .1em solid;
+  vertical-align: top;
+
 }

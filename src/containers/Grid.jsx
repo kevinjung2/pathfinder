@@ -4,8 +4,8 @@ import Cell from '../components/Cell'
 
 export default function Grid(props) {
   const { gridSize } = props
-  const grid = Array.from({length: gridSize}, x => x % 2)
-
+  const grid = Array.from({length: gridSize}, (x, i) => i % 2)
+  console.log(grid);
   return(
     <div className="grid">
       {grid.map(cell => <Cell color={cell}/>)}
