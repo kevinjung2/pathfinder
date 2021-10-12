@@ -1,6 +1,6 @@
 .grid {
-  margin: auto;
-  width: 33em;
+  margin: 0;
+  width: 100vh;
 }
 
 .cell {
@@ -8,6 +8,6 @@
   width: 3em;
   height: 3em;
   border: .1em solid;
-  vertical-align: top;
-
+  justify-content: 0;
+  padding: 0;
 }
