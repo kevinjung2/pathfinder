@@ -6,7 +6,7 @@ export default function Cell(props) {
   const [visited, setVisited] = useState(false)
 
   return(
-    <div className="cell" onClick={() => setVisited(true)}>
-    </div>
+    <td className="cell" id={props.location} onClick={() => setVisited(true)}>
+    </td>
   )
 }

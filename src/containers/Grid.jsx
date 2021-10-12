@@ -1,14 +1,15 @@
 import React from 'react';
+import { gridArrays } from '../components/gridArrays.js';
 
 import Cell from '../components/Cell'
 
 export default function Grid(props) {
   const { gridSize } = props
-  const grid = Array.from({length: gridSize})
+  const grid = gridArrays()[gridSize]
 
   return(
-    <div className="grid">
-      {grid.map(cell => <Cell id={cell}/>)}
-    </div>
+    <table className="grid">
+      {grid.map((row, i) => <tr>{row.map((cell, j) => <Cell location={`${i},${j}`} key={`${i},${j}`} />)}</tr>)}
+    </table>
   )
 }

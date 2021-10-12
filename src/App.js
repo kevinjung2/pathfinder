@@ -5,7 +5,7 @@ import OptionsBar from './containers/OptionsBar'
 import Grid from './containers/Grid'
 
 function App() {
-  const [gridSize, changeGridSize] = useState(100)
+  const [gridSize, changeGridSize] = useState("small")
   const [algorithm, changeAlgorithm] = useState("dykstras")
   const [wall, toggleWall] = useState(false)
 
